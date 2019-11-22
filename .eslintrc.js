@@ -23,15 +23,30 @@ module.exports = {
     'react',
     'react-hooks',
     '@typescript-eslint',
+    'simple-import-sort',
   ],
   rules: {
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
-    'prettier/prettier': 'error',
-    'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }],
     'arrow-body-style': ['error', 'as-needed'],
+    'import/order': 'off',
     'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
+    'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
+    'prettier/prettier': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/rules-of-hooks': 'error',
+    'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }],
+    'react/jsx-one-expression-per-line': 'off',
+    'simple-import-sort/sort': 'error',
+    'sort-imports': 'off',
   },
+  overrides: [
+    {
+      files: ['*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'off',
+      }
+    }
+  ],
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
