@@ -1,12 +1,24 @@
+import { createBrowserHistory, History } from 'history';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { Store } from 'redux';
 
-import App from './App';
+import State from './models/State';
 import * as serviceWorker from './serviceWorker';
+import configureStore from './store';
+import App from './views';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const initialState: Partial<State> = {};
+const history: History = createBrowserHistory({ basename: '' });
+const store: Store<State> = configureStore(initialState, history);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+ReactDOM.render(
+  <Provider store={store}>
+    <App history={history} />
+  </Provider>,
+
+  document.getElementById('root'),
+);
+
 serviceWorker.unregister();

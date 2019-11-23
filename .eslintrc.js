@@ -32,6 +32,7 @@ module.exports = {
     'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
     'no-use-before-define': ['off'],
     'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
+    'import/prefer-default-export': 'off',
     'prettier/prettier': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
