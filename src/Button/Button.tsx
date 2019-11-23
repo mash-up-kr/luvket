@@ -1,25 +1,20 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 
-type ButtonProps = {
+interface Props {
   children: React.ReactNode;
   onClick?: (e?: React.MouseEvent<HTMLButtonElement>) => void;
-  theme: 'primary' | 'secondary' | 'tertiary';
-  size: 'small' | 'medium' | 'big';
+  theme?: 'primary' | 'secondary' | 'tertiary';
+  size?: 'small' | 'medium' | 'big';
   disabled?: boolean;
   width?: string | number;
-};
+}
 
-const Button = ({ children, theme, size, disabled, width, onClick }: ButtonProps) => (
+const Button: React.FC<Props> = ({ children, theme = 'primary', size = 'medium', disabled, width, onClick }) => (
   <button type="button" css={[style, themes[theme], sizes[size], { width }]} disabled={disabled} onClick={onClick}>
     {children}
   </button>
 );
-
-Button.defaultProps = {
-  theme: 'primary',
-  size: 'medium',
-};
 
 const style = css`
   outline: none;

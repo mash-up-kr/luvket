@@ -11,7 +11,7 @@ export default {
   decorators: [withKnobs],
 };
 
-export const button = () => {
+export const button: React.FC = () => {
   const label = text('children', 'BUTTON');
   const size = select('size', ['small', 'medium', 'big'], 'medium');
   const theme = select('theme', ['primary', 'secondary', 'tertiary'], 'primary');
@@ -25,15 +25,11 @@ export const button = () => {
   );
 };
 
-button.story = {
-  name: 'Default',
-};
+export const primaryButton: React.FC = () => <Button>PRIMARY</Button>;
 
-export const primaryButton = () => <Button>PRIMARY</Button>;
+export const secondaryButton: React.FC = () => <Button theme="secondary">SECONDARY</Button>;
 
-export const secondaryButton = () => <Button theme="secondary">SECONDARY</Button>;
-
-export const tertiaryButton = () => <Button theme="tertiary">TERTIARY</Button>;
+export const tertiaryButton: React.FC = () => <Button theme="tertiary">TERTIARY</Button>;
 
 const buttonWrapper = css`
   .description {
@@ -44,7 +40,7 @@ const buttonWrapper = css`
   }
 `;
 
-export const sizes = () => (
+export const sizes: React.FC = () => (
   <div css={buttonWrapper}>
     <div>
       <div className="description">Small</div>
@@ -61,7 +57,7 @@ export const sizes = () => (
   </div>
 );
 
-export const disabled = () => (
+export const disabled: React.FC = () => (
   <div css={buttonWrapper}>
     <div>
       <Button disabled>PRIMARY</Button>
@@ -79,7 +75,7 @@ export const disabled = () => (
   </div>
 );
 
-export const customSized = () => (
+export const customSized: React.FC = () => (
   <div css={buttonWrapper}>
     <div>
       <Button width="20rem">CUSTOM WIDTH</Button>
