@@ -37,6 +37,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }],
     'react/jsx-one-expression-per-line': 'off',
+    'react/prop-types': 'off',
     'simple-import-sort/sort': 'error',
     'sort-imports': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { variables: false, functions: false }],
