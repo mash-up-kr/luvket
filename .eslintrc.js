@@ -28,6 +28,7 @@ module.exports = {
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'import/order': 'off',
+    'import/no-extraneous-dependencies': ['error', { 'devDependencies': ['**/*.stories.tsx', '**/*.test.js'] }],
     'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
     'no-use-before-define': ['off'],
     'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
