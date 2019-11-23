@@ -22,13 +22,14 @@ module.exports = {
   plugins: [
     'react',
     'react-hooks',
-    '@typescript-eslint',
     'simple-import-sort',
+    '@typescript-eslint',
   ],
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'import/order': 'off',
     'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
+    'no-use-before-define': ['off'],
     'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
     'prettier/prettier': 'error',
     'react-hooks/exhaustive-deps': 'warn',
@@ -37,6 +38,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'simple-import-sort/sort': 'error',
     'sort-imports': 'off',
+    '@typescript-eslint/no-use-before-define': ['error', { variables: false, functions: false }],
   },
   overrides: [
     {
@@ -44,8 +46,8 @@ module.exports = {
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
-      }
-    }
+      },
+    },
   ],
   settings: {
     'import/parsers': {
