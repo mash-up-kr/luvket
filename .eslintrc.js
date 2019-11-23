@@ -34,15 +34,18 @@ module.exports = {
     'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
     'import/prefer-default-export': 'off',
     'prettier/prettier': 'error',
+    'react/button-has-type': 'off',
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }],
     'react/jsx-one-expression-per-line': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'simple-import-sort/sort': 'error',
     'sort-imports': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { variables: false, functions: false }],
+    '@typescript-eslint/no-empty-interface': 'off',
   },
   overrides: [
     {

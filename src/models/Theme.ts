@@ -1,3 +1,12 @@
 export default interface Theme {
-  readonly palette: {};
+  readonly palette: {
+    gray: {
+      100: string;
+    };
+  };
+  readonly typography: {
+    button: {
+      fontSize: string;
+    };
+  };
 }
