@@ -2,7 +2,7 @@ import { Global } from '@emotion/core';
 import { ConnectedRouter } from 'connected-react-router';
 import { ThemeProvider } from 'emotion-theming';
 import { History } from 'history';
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import { RouteEnum } from '../constants';
