@@ -1,8 +1,26 @@
 export default interface Theme {
   readonly palette: {
+    main: {
+      100: string;
+      200: string;
+      300: string;
+      400: string;
+      500: string;
+      600: string;
+      700: string;
+      800: string;
+      900: string;
+    };
     gray: {
       100: string;
+      200: string;
+      300: string;
+      400: string;
       500: string;
+      600: string;
+      700: string;
+      800: string;
+      900: string;
     };
   };
   readonly typography: {
@@ -15,6 +33,9 @@ export default interface Theme {
       lineHeight: number;
     };
     button: {
+      fontSize: string;
+    };
+    caption: {
       fontSize: string;
     };
   };

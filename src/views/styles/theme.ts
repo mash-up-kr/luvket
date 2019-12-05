@@ -2,9 +2,27 @@ import Theme from '../../models/Theme';
 
 const theme: Theme = {
   palette: {
+    main: {
+      100: '#ffc8ba',
+      200: '#ffa38e',
+      300: '#ff7e62',
+      400: '#ff6040',
+      500: '#ff4242',
+      600: '#f4391c',
+      700: '#e63217',
+      800: '#d82912',
+      900: '#bf1a09',
+    },
     gray: {
-      100: '#d8d8d8',
-      500: 'rgba(60, 60, 67, 0.6)',
+      100: '#f7f7f7',
+      200: '#e1e1e1',
+      300: '#cecece',
+      400: '#a9a9a9',
+      500: '#888888',
+      600: '#616161',
+      700: '#4e4e4e',
+      800: '#303030',
+      900: '#101010',
     },
   },
   typography: {
@@ -18,6 +36,9 @@ const theme: Theme = {
     },
     button: {
       fontSize: '14px',
+    },
+    caption: {
+      fontSize: '12px',
     },
   },
 };
