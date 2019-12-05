@@ -13,7 +13,7 @@ const s = {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid ${theme.palette.gray[100]};
+    border-bottom: 1px solid ${theme.palette.gray[300]};
   `,
 };
 
