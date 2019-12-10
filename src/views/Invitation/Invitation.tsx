@@ -1,4 +1,5 @@
 import { css, SerializedStyles } from '@emotion/core';
+import { Fragment } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import Theme from '../../models/Theme';
@@ -22,7 +23,7 @@ const Invitation: React.FC = () => {
   const handleLinkClick = (): void => {};
 
   return (
-    <>
+    <Fragment>
       <Header>
         <Button type="button" onClick={handlePrevClick}>
           이전
@@ -43,7 +44,7 @@ const Invitation: React.FC = () => {
         </div>
         <DotsIndicator totalPages={2} currentPage={2} />
       </Layout>
-    </>
+    </Fragment>
   );
 };
 
