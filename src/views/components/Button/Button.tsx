@@ -9,8 +9,9 @@ const Button: React.FC<ButtonProps> = (props) => <button css={s.button} {...prop
 
 const s = {
   button: (theme: Theme): SerializedStyles => css`
-    ${theme.typography.button};
-    padding: 0;
+    ${theme.typography.caption};
+    color: ${theme.palette.gray[900]};
+    padding: 6px 12px;
     border: 0;
     outline: none;
     background: none;
