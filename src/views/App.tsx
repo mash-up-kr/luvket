@@ -10,6 +10,7 @@ import { Spinner } from './components';
 import Home from './Home';
 import Invitation from './Invitation';
 import NotFound from './NotFound';
+import Reply from './Reply';
 import { global, theme } from './styles';
 
 interface Props {
@@ -24,6 +25,7 @@ const App: React.FC<Props> = ({ history }: React.PropsWithChildren<Props>) => (
         <Switch>
           <Route exact path={RouteEnum.Home} component={Home} />
           <Route exact path={RouteEnum.Invitation} component={Invitation} />
+          <Route exact path={RouteEnum.Reply} component={Reply} />
           <Route component={NotFound} />
         </Switch>
       </Suspense>
