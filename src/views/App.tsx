@@ -9,6 +9,7 @@ import { RouteEnum } from '../constants';
 import { Spinner } from './components';
 import Home from './Home';
 import Invitation from './Invitation';
+import Login from './Login';
 import NotFound from './NotFound';
 import Profile from './Profile';
 import Reply from './Reply';
@@ -25,6 +26,7 @@ const App: React.FC<Props> = ({ history }: React.PropsWithChildren<Props>) => (
       <Suspense fallback={<Spinner />}>
         <Switch>
           <Route exact path={RouteEnum.Home} component={Home} />
+          <Route exact path={RouteEnum.Login} component={Login} />
           <Route exact path={RouteEnum.Profile} component={Profile} />
           <Route exact path={RouteEnum.Invitation} component={Invitation} />
           <Route exact path={RouteEnum.Reply} component={Reply} />

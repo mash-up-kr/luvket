@@ -2,3 +2,6 @@
 export { default as cameraIcon } from './ic-camera.svg';
 export { default as kakaoIcon } from './ic-kakao.svg';
 export { default as linkIcon } from './ic-link.svg';
+export { default as facebookLoginIcon } from './ic-facebooklogin.svg';
+export { default as kakaoLoginIcon } from './ic-kakaologin.svg';
+export { default as logo } from './logo.svg';
