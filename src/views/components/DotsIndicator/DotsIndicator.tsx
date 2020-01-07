@@ -8,8 +8,8 @@ interface DotsIndicatorProps {
   currentPage: number;
 }
 
-const DotsIndicator: React.FC<DotsIndicatorProps> = ({ totalPages, currentPage }) => (
-  <div css={s.wrapper}>
+const DotsIndicator: React.FC<DotsIndicatorProps> = ({ totalPages, currentPage, ...otherProps }) => (
+  <div css={s.wrapper} {...otherProps}>
     {_.range(1, totalPages + 1).map((item, index) => (
       <span
         key={item}
