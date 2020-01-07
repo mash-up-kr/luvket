@@ -1,3 +1,4 @@
+import { getDefaultFontSize } from '../../helpers';
 import Theme from '../../models/Theme';
 
 const theme: Theme = {
@@ -26,6 +27,7 @@ const theme: Theme = {
     },
   },
   typography: {
+    pxToRem: (px: number): string => `${px / getDefaultFontSize()}rem`,
     title: {
       fontSize: '20px',
       fontWeight: 700,

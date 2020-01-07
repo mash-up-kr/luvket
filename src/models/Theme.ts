@@ -24,6 +24,7 @@ export default interface Theme {
     };
   };
   readonly typography: {
+    pxToRem: (px: number) => string;
     title: {
       fontSize: string;
       fontWeight: number;
