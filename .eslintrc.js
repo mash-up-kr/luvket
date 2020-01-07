@@ -33,6 +33,7 @@ module.exports = {
     'no-use-before-define': ['off'],
     'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
     'import/prefer-default-export': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
     'prettier/prettier': 'error',
     'react/button-has-type': 'off',
     'react-hooks/exhaustive-deps': 'warn',
