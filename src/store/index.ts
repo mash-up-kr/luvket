@@ -1,1 +1,2 @@
-export { default } from './configureStore';
+export { default as middlewares } from './middlewares';
+export { default as reducer } from './reducer';
