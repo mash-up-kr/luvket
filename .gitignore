@@ -107,3 +107,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/react,macos,windows,visualstudiocode
+
+# Typedoc
+/docs

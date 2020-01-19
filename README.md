@@ -35,6 +35,18 @@ yarn start
 yarn test
 ```
 
+## Run storybook
+
+```sh
+yarn storybook
+```
+
+## Build docs
+
+```sh
+yarn build:docs
+```
+
 ## Author
 
 👤 **김찬연**
