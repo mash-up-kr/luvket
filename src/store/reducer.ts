@@ -1,11 +1,11 @@
+import { combineReducers } from '@reduxjs/toolkit';
 import { connectRouter } from 'connected-react-router';
 import { History } from 'history';
-import { combineReducers, Reducer, ReducersMapObject } from 'redux';
+import { Reducer } from 'redux';
 
-import State from '../models/State';
-
-const reducer = (history: History): Reducer<State> => {
-  const reducerMap: ReducersMapObject<State> = {
+const reducer = (history: History): Reducer => {
+  const reducerMap = {
+    // eslint-disable-next-line
     router: connectRouter(history) as any,
   };
 
