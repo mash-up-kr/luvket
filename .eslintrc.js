@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
   },
   extends: [
     'airbnb',
@@ -29,6 +30,7 @@ module.exports = {
     'arrow-body-style': ['error', 'as-needed'],
     'import/order': 'off',
     'import/no-extraneous-dependencies': ['error', { 'devDependencies': ['**/*.stories.tsx', '**/*.test.js'] }],
+    'no-param-reassign': ['error', { props: true, ignorePropertyModificationsFor: ['draft'] }],
     'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
     'no-use-before-define': ['off'],
     'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
