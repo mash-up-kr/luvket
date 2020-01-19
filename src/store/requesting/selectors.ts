@@ -4,7 +4,6 @@ import State from '@/models/State';
 
 /**
  * 파라미터로 전달받은 action들에 대하여 진행 중인 요청이 있는지 확인하는 selector를 생성한다.
- * @category requesting
  * @param actionTypes 진행 중인 요청을 확인할 비동기 액션 타입 목록
  * @returns 진행 중인 요청이 있는지 확인하는 selector
  * ```ts
